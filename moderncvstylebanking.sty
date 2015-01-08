@@ -35,12 +35,15 @@
 %  \setmathfont[range=\mathbfup,\mathbfsfup]{Tex-Gyre Pagella Bold}
 %  \setmathfont[range=\mathbfit,\mathbfsfit]{Tex-Gyre Pagella Bold Italic}
 %\else
-  \IfFileExists{tgpagella.sty}%
-    {%
-      \RequirePackage{tgpagella}%
-      \renewcommand*{\familydefault}{\rmdefault}}%
-    {}
+%  \IfFileExists{tgpagella.sty}%
+%    {%
+%      \RequirePackage{tgpagella}%
+%      \renewcommand*{\familydefault}{\rmdefault}}%
+%    {}
 %\fi
+
+
+\renewcommand*{\familydefault}{\rmdefault}
 
 % symbols
 \renewcommand*{\mobilesymbol}{\marvosymbol{72}~}
