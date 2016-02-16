@@ -1,0 +1,258 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% -*- coding: UTF-8; -*-
+% vim: set fenc=utf-8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SIMPLE-RESUME-CV
+%% <https://github.com/zachscrivena/simple-resume-cv>
+%% This is free and unencumbered software released into the
+%% public domain; see <http://unlicense.org> for details.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% INSTRUCTIONS FOR COMPILING THIS DOCUMENT ("CV.tex")
+%% TeX ---(XeLaTeX)---> PDF:
+%%
+%% Method 1: Use latexmk for fully automated document generation:
+%%   latexmk -xelatex "CV.tex"
+%%   (add the -pvc switch to automatically recompile on changes)
+%%
+%% Method 2: Use XeLaTeX directly:
+%%   xelatex "CV.tex"
+%%   (run multiple times to resolve cross-references if needed)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[letterpaper,MMMyyyy,nonstop]{simpleresumecv}
+% Class options:
+% a4paper, letterpaper, draft, nonstop
+% MMMyyyy, ddMMMyyyy, MMMMyyyy, ddMMMMyyyy, yyyyMMdd, yyyyMM, yyyy
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% CV Info (to be customized).
+\newcommand{\CVAuthor}{Ashley E. Hedberg}
+\newcommand{\CVTitle}{Ashley E. Hedberg's Resume}
+\newcommand{\CVNote}{Last updated {\today}}
+\newcommand{\CVWebpage}{http://ahedberg.github.io}
+
+% PDF settings and properties.
+\hypersetup{
+pdftitle={\CVTitle},
+pdfauthor={\CVAuthor},
+pdfsubject={\CVWebpage},
+pdfcreator={XeLaTeX},
+pdfkeywords={},
+pdfpagemode={},
+unicode=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks}
+
+% Shorthand.
+%\newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\title{\CVAuthor}
+
+\begin{subtitle}
+\href{mailto:ashley.hedberg@gmail.com}{ashley.hedberg@gmail.com}
+\,\SubBulletSymbol\,
+(804)\,357-4820
+\,\SubBulletSymbol\,
+\href{\CVWebpage}{\CVWebpage}
+\end{subtitle}
+
+\begin{body}
+
+%%%%%%%%%%%%%%%
+%% EDUCATION %%
+%%%%%%%%%%%%%%%
+
+\section{Education}{Education}{PDF:Education}
+
+\textbf{Tufts University School of Engineering}, Medford, MA
+
+\GapNoBreak
+\BulletItem
+Bachelor of Science (B.S.) in Computer Science
+\hfill
+\DatestampYM{2011}{09} -- \DatestampYM{2015}{05}
+\begin{detail}
+\SubBulletItem
+Second Major: Applied Mathematics
+\SubBulletItem
+Graduated Summa Cum Laude
+\SubBulletItem
+Cumulative GPA: 3.96 / 4.00
+\end{detail}
+
+%%%%%%%%%%%%%%%%%%%%%
+%% WORK EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%
+
+\section{Work\newline Experience}{Work Experience}{PDF:WorkExperience}
+
+\textbf{Google}, Cambridge, MA
+\GapNoBreak
+\BulletItem
+Software Engineer II
+\hfill
+\DatestampYM{2015}{08} -- Present
+\begin{detail}
+\SubBulletItem
+Developed internal Chrome extension for browsing session proxying
+\SubBulletItem
+Rewrote usage accountant to record activity asynchronously, providing a 20x improvement in latency
+\SubBulletItem
+Integrated new dynamic binary configuration system into FlooNet backend servers
+\SubBulletItem
+Improved monitoring for the FlooNet backend servers
+\end{detail}
+\BulletItem
+Software Engineering Intern
+\hfill
+\DatestampYM{2014}{05} -- \DatestampYM{2014}{08}
+\begin{detail}
+\SubBulletItem
+Improved testing framework for Google's content delivery network
+\SubBulletItem
+Analyzed results of content delivery network load tests using statistical methods
+\SubBulletItem
+Created internal Django application for team members to search for and compare load test results
+\end{detail}
+
+\BigGap
+
+\textbf{Rapid7}, Cambridge, MA
+\GapNoBreak
+\BulletItem
+Engineering Intern
+\hfill
+\DatestampYM{2013}{07} -- \DatestampYM{2013}{08}
+\begin{detail}
+\SubBulletItem
+Prototyped end-user agent to collect information about activity on Windows machines
+\SubBulletItem
+Built web interface to convert agent data into monitoring statistics
+\SubBulletItem
+Developed user interface for internal cloud monitoring service
+\end{detail}
+
+\BigGap
+
+\textbf{Tufts University Department of Computer Science}, Medford, MA
+\GapNoBreak
+\BulletItem
+Teaching Fellow
+\hfill
+\DatestampYM{2013}{01} -- \DatestampYM{2015}{05}
+\begin{detail}
+\SubBulletItem
+Managed communication with a team of undergraduate teaching assistants
+\SubBulletItem
+Coordinated with class professor to plan and lead weekly implementation laboratories
+\SubBulletItem
+Held weekly office hours to assist students with assignments and class material and graded student projects
+\end{detail}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% AWARDS & SCHOLARSHIPS %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards \&\newline Scholarships}{Awards \& Scholarships}{PDF:AwardsAndScholarships}
+
+\BulletItem
+Dean's List
+\hfill
+\DatestampY{2011} -- \DatestampY{2015}
+
+\BulletItem
+\href{http://students.tufts.edu/academic-advice-and-support/academic-advising/what-we-offer/guidance-academic-policies/academic-awards}{Class of 1911 Scholarship Prize} Recipient
+\hfill
+\DatestampYM{2015}{04}
+
+\BulletItem
+\href{http://tuftsalumni.org/who-we-are/alumni-recognition/senior-awards/}{Tufts Alumni Senior Award} Recipient
+\hfill
+\DatestampYM{2015}{03}
+
+\BulletItem
+\href{http://www.rrpcusa.org/pages.asp?pageid=110003}{Fox-Ould Memorial Scholarship} Recipient
+\hfill
+\DatestampYM{2014}{06}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% CAMPUS ACTIVITIES %%
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Community\newline Activities}{Community Activities}{PDF:CommunityActivities}
+
+\href{http://www.carerva.com}{\textbf{Capital Area Rescue Effort}}, Sandston, VA
+\GapNoBreak
+\BulletItem
+Web Manager
+\hfill
+\DatestampYM{2014}{12} -- Present
+
+\BigGap
+
+\textbf{Harvard-Epworth United Methodist Church}, Cambridge, MA
+\GapNoBreak
+\BulletItem
+Staff Parish Relations Committee
+\hfill
+\DatestampYM{2016}{01} -- Present
+
+\BulletItem
+Choir Member
+\hfill
+\DatestampYM{2015}{09} -- Present
+
+\BulletItem
+Bell Choir Member
+\hfill
+\DatestampYM{2012}{09} -- \DatestampYM{2015}{12}
+
+%%%%%%%%%%%%
+%% SKILLS %%
+%%%%%%%%%%%%
+
+\section{Skills}{Skills}{PDF:Skills}
+
+C++,
+C,
+Python,
+JavaScript
+
+\Gap
+
+Chrome Apps and Extensions,
+Native Client,
+AppEngine
+
+%%%%%%%%%%%
+% CV NOTE %
+%%%%%%%%%%%
+
+\end{body}
+
+\UseNoteFont%
+\null\hfill%
+[\textit{\CVNote}]%
+\hspace{2.0mm}\null
+
+\end{document}
